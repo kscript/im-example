@@ -1,10 +1,6 @@
 import axios, { AxiosError, AxiosResponse, AxiosRequestConfig } from 'axios';
 import * as qs from 'qs';
 
-interface anyObject<T = any> {
-    [prop: string]: T;
-}
-
 const $axios = axios.create({
     baseURL: '/',
     timeout: 15000,
