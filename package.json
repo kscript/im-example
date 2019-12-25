@@ -16,6 +16,7 @@
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@types/qs": "^6.9.0",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-plugin-router": "^4.1.0",
@@ -24,6 +25,7 @@
     "@vue/cli-service": "^4.1.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
+    "axios": "^0.19.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.23.7",

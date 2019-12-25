@@ -1,7 +1,8 @@
-import { ActionTree } from "vuex";
-import StoreData from "@/store/state";
+import { ActionTree } from 'vuex';
+import StoreData from '@/store/state';
+import axios from '@/axios';
 const actions: ActionTree<StoreData, StoreData> = {
-  account({ state, commit, getters, dispatch }, value: string) {
+  account ({ state, commit, getters, dispatch }, value: string) {
     commit('account', value);
   }
 }
