@@ -21,19 +21,19 @@ declare module 'vue/types/vue' {
   ]
 })
 export class Bus extends Vue {
-  public init () {
+  public init() {
     setTimeout(() => {
       this.$emit('init', 'world')
     }, 5e3)
   }
-  protected created () {
+  protected created() {
     this.init()
     this.selectSession('pre_test123')
   }
 }
 export const eventBus = new Bus()
 export default {
-  install () {
+  install() {
     Vue.prototype.$bus = eventBus
   }
 }
