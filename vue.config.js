@@ -11,5 +11,12 @@ module.exports = {
         }
       }
     }
-  }
+  },
+  configureWebpack: (configure) => {
+    return {
+      externals: /development|test/.test(process.env.NODE_ENV) ? [] : [{
+        'element-ui': 'ELEMENT'
+      }]
+    }
+  },
 }

@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>im-example</title>
+    <link href="<%= BASE_URL %>css/element-ui@2.13.0.css" rel="stylesheet">
+    <% if (NODE_ENV === 'production') { %>
+    <script src="<%= BASE_URL %>js/vue.min.js"></script>
+    <script src="<%= BASE_URL %>js/vuex.min.js"></script>
+    <script src="<%= BASE_URL %>js/vue-router.min.js"></script>
+    <script src="<%= BASE_URL %>js/axios.min.js"></script>
+    <script src="<%= BASE_URL %>js/element-ui@2.13.0.js"></script>
     <script src="<%= BASE_URL %>js/NIM_Web_SDK_v6.8.0.js"></script>
+    <% } else { %>
+    <script src="<%= BASE_URL %>js/NIM_Web_SDK_v6.8.0.js"></script>
+    <% } %>
   </head>
   <body>
     <noscript>
