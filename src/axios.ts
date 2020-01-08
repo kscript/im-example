@@ -2,7 +2,7 @@ import axios, { AxiosError, AxiosResponse, AxiosRequestConfig } from 'axios';
 import * as qs from 'qs';
 
 const $axios = axios.create({
-    baseURL: '/',
+    baseURL: '/api/',
     timeout: 15000,
     transformRequest: [(data: anyObject) => {
         return data instanceof FormData ? data : qs.stringify(data);
