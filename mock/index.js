@@ -5,9 +5,9 @@ new KsMock({
     headConfig: null,
     crossDomain: true,
     port: 3030,
-    loginUrl: 'login',
-    https: {
-      key: '',
-      cert: ''
-    }
+    // loginUrl: 'login',
+    // https: {
+    //   key: '',
+    //   cert: ''
+    // }
 }).server();
