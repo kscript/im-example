@@ -12,12 +12,12 @@ export class BusData extends Vue {
   public mode: string = 'list'
   public current: string = ''
   // 计算属性
-  get uid () {
+  get uid() {
     return (/_/.test(this.current) ? this.current.split('_')[1] : store.state.account) || ''
   }
   // 监听数据变动
   @Watch('current', { immediate: true })
-  currentChange (val: string, oldVal: string) {
+  currentChange(val: string, oldVal: string) {
     this.mode = val ? 'chat' : 'list'
     store.commit('account', val)
   }

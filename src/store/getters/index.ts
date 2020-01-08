@@ -1,13 +1,13 @@
 import StoreData from '@/store/state'
-
+import { getLocal, getStore } from '@/utils/localStorage'
 export default {
   account: (state: StoreData): string => {
-    return state.account
+    return getStore(state, 'account')
   },
   appKey: (state: StoreData): string => {
-    return state.appKey
+    return getStore(state, 'appKey')
   },
   token: (state: StoreData): string => {
-    return state.token
+    return getStore(state, 'token')
   }
 }

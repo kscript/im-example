@@ -1,6 +1,6 @@
 export default {
-    localStorage: {
-        pre: 'im_',
-        preUnread: 'im_unread_'
-    }
+  localStorage: {
+    pre: 'im_',
+    preUnread: 'im_unread_'
+  }
 }

@@ -1,18 +1,19 @@
 import { MutationTree } from 'vuex'
 import StoreData from '@/store/state'
+import { setLocal, setStore } from '@/utils/localStorage'
 
 const mutations: MutationTree<StoreData> = {
   account(state, value: string) {
-    state.account = value
+    setStore(state, 'account', value)
   },
   appKey(state, value: string) {
-    state.appKey = value
+    setStore(state, 'appKey', value)
   },
   token(state, value: string) {
-    state.token = value
+    setStore(state, 'token', value)
   },
   isLogin(state, value: number) {
-    state.isLogin = value
+    setStore(state, 'isLogin', value)
   },
   nim(state, value: anyObject) {
     state.nim = value

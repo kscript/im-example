@@ -76,7 +76,7 @@ export const isEmpty = (obj: anyObject): boolean => {
  * @func
  */
 export const clearLocal = () => {
-  for(let key in storage) {
+  for (let key in storage) {
     let pre = key.slice(0, config.localStorage.pre.length);
     let unread = key.slice(0, config.localStorage.preUnread.length);
     if (pre === config.localStorage.pre && unread !== config.localStorage.preUnread) {
