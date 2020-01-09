@@ -15,6 +15,10 @@ module.exports = {
   configureWebpack: (configure) => {
     return {
       externals: /development|test/.test(process.env.NODE_ENV) ? [] : [{
+        'vue': 'Vue',
+        'vue-router': 'VueRouter',
+        'vuex': 'Vuex',
+        'axios': 'axios',
         'element-ui': 'ELEMENT'
       }]
     }
